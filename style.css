@@ -1,5 +1,37 @@
+@font-face {
+    font-family: Montserrat Regular;
+    font-display: auto;
+    src: local('Montserrat Regular'), url('./assets/fonts/Montserrat-Regular.woff2');
+    font-style: normal;
+  }
+@font-face {
+    font-family: Montserrat Bold;
+    font-display: auto;
+    src: local('Montserrat Bold'), url('./assets/fonts/Montserrat-Bold.woff2');
+    font-style: normal;
+  }
+@font-face {
+    font-family: Montserrat ExtraBold;
+    font-display: auto;
+    src: local('Montserrat ExtraBold'), url('./assets/fonts/Montserrat-ExtraBold.woff2');
+    font-weight: 800;
+    font-style: normal;
+  }
+@font-face {
+    font-family: Montserrat Italic;
+    font-display: auto;
+    src: local('Montserrat Italic'), url('./assets/fonts/Montserrat-Italic.woff2');
+    font-style: normal;
+  }
+@font-face {
+    font-family: Montserrat Medium;
+    font-display: auto;
+    src: local('Montserrat Medium'), url('./assets/fonts/Montserrat-Medium.woff2');
+    font-style: normal;
+  }
 body{
     margin: 0;
+    font-family:  'Montserrat Medium';
 }
 .container{
     width: 75%;
@@ -10,6 +42,7 @@ h1{
     color: #FFFFFF;
     line-height: 64px;
     text-align: center;
+    font-family: 'Montserrat Medium';
 }
 section{
     border: 2px solid red;
@@ -20,6 +53,27 @@ section{
     background-size: auto 100%;
     background-position: center;
 }
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 120%;
+}
+nav.navbar a{
+    font-family: 'Montserrat Medium';
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 40px 20px 40px;
+}
+nav.navbar a:hover{
+    border-bottom: 2px solid #FFFFFF ;
+}
+div.home-line{
+    opacity: 0.5;
+    border: 1px solid #A1A1A1;
+}
 .home-content{
     display: flex;
     flex-direction: column;
@@ -28,11 +82,13 @@ section{
     height: 100%;
 }
 .home-content .first-title{
+    font-family: 'Montserrat Regular';
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
 }
 .home-content .button-block button{
+    font-family: 'Montserrat Medium';
     background: #4985FF;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     border-radius: 30px;
