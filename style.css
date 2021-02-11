@@ -168,6 +168,16 @@ dd{
 .our-works{
     background: linear-gradient(#504DC2 50%,#fff 50%);
 }
+.our-works-title h2{
+    margin: 0;
+    font-family: 'Montserrat Medium';
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #FFFFFF;
+    padding:  100px 0 70px;
+
+}
 .our-works-title{
     justify-content: space-between;
     align-items: center;
@@ -185,13 +195,87 @@ dd{
 }
 .our-works-item{
     width: 31%;
-    border: 2px solid red;
+}
+.our-works-item h5{
+    font-family: 'Montserrat Regular';
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+}
+h5 span{
+    font-family: 'Montserrat Regular';
+    font-size: 18px;
+    line-height: 22px;
+    color: #4985FF;
+}
+.our-works-item p{
+    font-family: 'Montserrat Regular';
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999;
+}
+.our-works-item a{
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #4985FF;
+}
+.our-works-line{
+    border: 1px solid #E0E0E0;
+    margin: 85px 0;
 }
 .our-works-item img{
     width: 100%;
 }
 .span{
     text-align: center;
+}
+.span-video{
+    background-image: url("./assets/img/Rectangle\ 3.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+.span-video h2{
+    margin: 0;
+    font-family: 'Montserrat Medium';
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 70px 0 30px;
+}
+.span-video p{
+    margin: 0;
+    font-family: 'Montserrat Regular';
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.span-video img{
+    margin: 0;
+    position: relative;
+    top: 70px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(4.jpg);
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 10px;
+    }
+.span-video-line{
+    margin: 165px 0 85px;
+    border: 1px solid #E0E0E0;
+}
+.mailing h3{
+    font-family: 'Montserrat Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
+.mailing p{
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #999999;
 }
 .subscribe-block{
     justify-content: center;
@@ -206,9 +290,39 @@ dd{
     
 }
 .subscribe-block input::placeholder{
-    color: red;
+    font-size: 13px;
+    line-height: 21px;
+    color: #999999;
 }
 .subscribe-block .primary-button{
     border-radius: 0 30px 30px 0;
     height: 45px;
+
+}
+.span-text{
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    color: #999999;
+    margin: 35px 0 85px 0;
+}
+.footer{
+    background: #F6F6F8;
+}
+.footer-block{
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 70px;
+}
+.footer-contacts h3{
+    font-family: 'Montserrat Medium';
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+    }
+.footer-contacts img{
+    width: 15px;
+    height: 15px;
+    padding: 0 15px 30px 0;
 }
