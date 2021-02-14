@@ -64,9 +64,6 @@ h1{
     color: #FFFFFF;
     padding: 14px 36px;
 }
-section{
-    border: 2px solid red;
-}
 .homesection{
     height: 100vh;
     background-image: url("./assets/img/Rectangle.jpg");
@@ -301,6 +298,42 @@ h5 span{
 .our-works-item img{
     width: 100%;
 }
+
+.all-our-projects{
+    background: #F6F6F8;
+}
+.all-projects{
+    justify-content: center;
+    align-items: center;
+}
+.all-projects h2{
+    font-family: 'Montserrat Medium';
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    padding-top: 100px;
+}
+.all-projects p{
+    font-family: 'Montserrat Regular';
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #999999;
+    width: 65%;
+}
+.all-our-projects-item img{
+    background: url(photo-1508921108053-9f757ead871c.jpg), #C4C4C4;
+    border-radius: 10px;
+    margin: 65px 15px;
+}
+.all-our-projects-button{
+    margin-bottom: 130px;
+}
+
+
+
 .span{
     text-align: center;
 }
