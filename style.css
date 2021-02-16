@@ -104,7 +104,6 @@ div.home-line{
     color: #FFFFFF;
 }
 .services-section{
-    height: 100vh;
     background: white;
     background-size: auto 100%;
     background-position: center;
@@ -114,7 +113,6 @@ div.home-line{
    
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 .services-content h2{
     margin: 0;
@@ -143,12 +141,27 @@ div.home-line{
 .services-item img{
     width: 40px;
     height: 40px;
+    margin: 25px;
 
+}
+.services-item-circle .circle1{
+    border-radius: 50%;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    width: 110px;
+    height: 110px;  
+}
+.services-item-circle .circle2{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid #4985FF;
+    box-sizing: border-box;
+    margin: 10px;
 }
 dl{
     margin: 0;
-    padding: 20px 27px 17px 50px;
-    
+    padding: 50px 27px 27px 27px;
 }
 dt{
     font-size: 18px;
@@ -262,11 +275,12 @@ dd{
 }
 .our-works-items{
     justify-content: space-between;
-
 }
 .our-works-item{
     width: 31%;
 }
+
+
 .our-works-item h5{
     font-family: 'Montserrat Regular';
     font-size: 18px;
@@ -394,6 +408,7 @@ h5 span{
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     border-radius: 30px 0 0 30px;
     padding: 0;
+    flex: 1;
     
 }
 .subscribe-block input::placeholder{
@@ -404,6 +419,7 @@ h5 span{
 .subscribe-block .primary-button{
     border-radius: 0 30px 30px 0;
     height: 45px;
+    
 
 }
 .span-text{
@@ -413,6 +429,9 @@ h5 span{
     color: #999999;
     margin: 35px 0 85px 0;
 }
+
+
+
 .footer{
     background: #F6F6F8;
 }
@@ -439,15 +458,7 @@ h5 span{
     line-height: 22px;
     color: #000000;
 }
-ul{
-    text-decoration: none;
-    list-style-type: unset;
-    margin: 0;
-}
-li{
-  
-    padding-bottom: 30px;
-}
+
 .footer-our-projects h3{
     font-family: 'Montserrat Medium';
     font-size: 18px;
@@ -466,4 +477,51 @@ li{
     color: #999999;
     padding: 30px 0;
 }
+.footer-main-links img{
+    margin: 0 10px 30px 0;
+}
 
+.footer-our-projects img{
+    margin: 0 10px 30px 0;
+}
+.footer-social-network img{
+    margin: 0 10px 30px 0;
+}
+@media (max-width: 900px){
+    .home-content .first-title{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .home-content h1{
+        font-size: 20px;
+        line-height: 22px;
+    }
+   .primary-button{
+        font-size: 14px;
+        padding: 7px 14px;
+    }
+    .our-works-items{
+        flex-wrap: wrap;
+    }
+    .our-works-item{
+        width: 47%;
+        margin: 10px 0;
+    }
+    .our-works-item h5,
+    .our-works-item p,
+    .our-works-item a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 600px){
+    .home-content h1{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .our-works-items{
+        flex-wrap: wrap;
+    }
+    .our-works-item{
+        width: 60%;
+    }
+}
