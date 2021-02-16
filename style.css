@@ -122,7 +122,7 @@ div.home-line{
     line-height: 53px;
     text-align: center;
     color: #323232;
-    padding: 0px 187px 25px;
+    padding: 110px 187px 25px;
 }
 .services-content p{
     margin: 0;
@@ -176,6 +176,9 @@ dd{
     font-size: 14px;
     line-height: 22px;
     color: #999999;
+}
+.services-button button{
+    margin-bottom: 105px;
 }
 .our-ptojects{
     background: #F6F6F8;
@@ -487,7 +490,17 @@ h5 span{
 .footer-social-network img{
     margin: 0 10px 30px 0;
 }
+
+
+
+
+
 @media (max-width: 900px){
+    nav.navbar a{
+        font-size: 14px;
+        line-height: 18px;
+        padding-right: 20px;
+    }
     .home-content .first-title{
         font-size: 12px;
         line-height: 16px;
@@ -500,6 +513,63 @@ h5 span{
         font-size: 14px;
         padding: 7px 14px;
     }
+    .services-content h2{
+        font-size: 32px;
+        line-height: 47px;
+        padding: 50px;
+    }
+    .services-content p{
+        font-size: 14px;
+        line-height: 22px;
+        padding:  0;
+    }
+    .services-item.flex-row{
+        flex-direction: column;
+    }
+    .services-item-circle .circle1{
+        width: 100px;
+        height: 100px;
+    }
+    .circle1 .circle2{
+        width: 80px;
+        height: 80px;
+    }
+    .circle1 .circle2 img{
+        width: 30px;
+        height: 30px;
+        margin: 20px;
+    }
+    dl{
+        padding: 0;
+        margin: 16px;
+    }
+    dt{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    dd{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .our-projects-developer.flex-row{
+        flex-direction: column;
+    }
+    .our-projects-developer .our-projects-title {
+        width: 100%;
+    }
+    .our-projects-developer .our-projects-title h2{
+        font-size: 34px;
+        line-height: 51px
+    }
+    .our-projects-developer .our-projects-title p{
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .our-projects-developer .our-projects-title a{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
     .our-works-items{
         flex-wrap: wrap;
     }
@@ -514,10 +584,62 @@ h5 span{
     }
 }
 @media (max-width: 600px){
+    nav.navbar a{
+        font-size: 12px;
+        line-height: 16px;
+        padding-right: 20px;
+    }
     .home-content h1{
         font-size: 16px;
         line-height: 20px;
     }
+    .services-content h2{
+        font-size: 30px;
+        line-height: 45px;
+        padding: 40px 0 15px;
+    }
+    .services-item-circle .circle1{
+        width: 80px;
+        height: 80px;
+    }
+    .circle1 .circle2{
+        width: 60px;
+        height: 60px;
+    }
+    .circle1 .circle2 img{
+        width:  20px;
+        height: 20px;
+        margin: 20px;
+    }
+    dl{
+        padding: 0;
+        margin: 16px;
+
+    }
+    dt{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    dd{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .our-projects-developer .our-projects-title {
+        width: 100%;
+    }
+    .our-projects-developer .our-projects-title h2{
+        font-size: 32px;
+        line-height: 49px
+    }
+    .our-projects-developer .our-projects-title p{
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .our-projects-developer .our-projects-title a{
+        font-size: 12px;
+        line-height: 18px;
+    }
+   
     .our-works-items{
         flex-wrap: wrap;
     }
