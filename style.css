@@ -376,15 +376,39 @@ h5 span{
     text-align: center;
     color: #FFFFFF;
 }
-.span-video-img img{
-    margin: 0;
+.span-video-img{
     position: relative;
-    display: inline-block;
+    width: 970px;
+    height: 430px;
+    margin: 0 auto; 
     top: 70px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(4.jpg);
-    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    background-image: url(./assets/img/Rectangle\ 4.svg);
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     
+}
+.span-video-img-content{
+    position: absolute;
+    top: 165px;
+    left: 335px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+	height: 100px;
+	border: 1px solid #fff;
+	border-radius: 200px;
+}
+.span-video-img-content img{
+    width: 60px;
+    height: 60px;
+    padding-right: 21px;
+}
+.span-video-img-content p{
+    font-size: 16px;
+    line-height: 25px;
+
+    color: #FFFFFF;
 }
 .span-video-line{
     margin: 165px 0 85px;
@@ -642,9 +666,13 @@ h5 span{
         font-size: 14px;
         line-height: 25px;
     }
-    .span-video-img img{
-        width: 800px;
+    .span-video-img{
+        width: 700px;
     }
+    .span-video-img-content{
+        left: 200px;
+    }
+    
     .mailing h3{
         font-size: 16px;
         line-height: 22px;
@@ -805,8 +833,11 @@ h5 span{
         font-size: 12px;
         line-height: 23px;
     }
-    .span-video-img img{
-        width: 550px;
+    .span-video-img{
+        width: 500px;
+    }
+    .span-video-img-content{
+        left: 120px;
     }
     .mailing h3{
         font-size: 14px;
