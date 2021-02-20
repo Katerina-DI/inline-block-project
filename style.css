@@ -54,6 +54,9 @@ h1{
     text-align: center;
     font-family: 'Montserrat Medium';
 }
+a:visited{
+    color: blueviolet;
+}
 .primary-button{
     font-family: 'Montserrat Medium';
     background: #4985FF;
@@ -63,6 +66,13 @@ h1{
     line-height: 20px;
     color: #FFFFFF;
     padding: 14px 36px;
+}
+.primary-button:hover{
+    color: black;
+    background: yellow;
+    cursor: pointer;
+    transition: 1s;
+
 }
 .homesection{
     height: 100vh;
@@ -138,7 +148,7 @@ div.home-line{
 }
 .services-item-circle-item{
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 .services-item img{
     width: 40px;
@@ -162,7 +172,7 @@ div.home-line{
     margin: 10px;
 }
 dl{
-    margin: 90px 20px 20px;
+    margin: 0 20px;
 }
 dt{
     font-size: 18px;
@@ -357,7 +367,7 @@ h5 span{
 }
 .span-video{
     background-image: url("./assets/img/Rectangle\ 3.jpg");
-    background-size: 100% 100%;
+    background-size: auto 100%;
     background-position: center;
 }
 .span-video h2{
@@ -440,6 +450,10 @@ h5 span{
     padding: 0;
     flex: 1;
     
+}
+.subscribe-block input:focus{
+    outline: 0;
+    background: rgb(245, 218, 218);
 }
 .subscribe-block input::placeholder{
     font-size: 13px;
@@ -552,13 +566,12 @@ h5 span{
     }
     .services-item.flex-row{
         flex-direction: column;
-    }
-    .services-item-circle-item{
-        padding-right: 40%;
+    
     }
     .services-item-circle .circle1{
         width: 100px;
         height: 100px;
+        margin-bottom: 10px;
     }
     .circle1 .circle2{
         width: 80px;
@@ -718,7 +731,11 @@ h5 span{
         padding: 20px 0;
     }
 }
+
 @media (max-width: 600px){
+    nav.navbar{
+        width: auto;
+    }
     nav.navbar a{
         font-size: 12px;
         line-height: 16px;
@@ -736,6 +753,9 @@ h5 span{
         font-size: 30px;
         line-height: 45px;
         padding: 40px 0 15px;
+    }
+    .services-item-circle-item{
+        padding-right: 0;
     }
     .services-item-circle .circle1{
         width: 80px;
@@ -829,7 +849,11 @@ h5 span{
         font-size: 12px;
         line-height: 23px;
         
-    }.span-video h2{
+    }
+    .all-our-projects-button{
+        margin: 50px;
+    }
+    .span-video h2{
         font-size: 25px;
         line-height: 50px;
     }
@@ -838,10 +862,11 @@ h5 span{
         line-height: 23px;
     }
     .span-video-img{
-        width: 500px;
+        width: 450px;
     }
     .span-video-img-content{
         left: 120px;
+        width: 50%;
     }
     .mailing h3{
         font-size: 14px;
